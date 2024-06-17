@@ -1,0 +1,44 @@
+.about {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+    width: 100%;
+    margin-bottom: 3.2rem;
+    padding: 0.5rem 1rem;
+    height: fit-content;
+}
+
+.about__content {
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+    height: 100%;
+    gap: 2.5rem;
+
+    & p {
+        font-size: 3rem;
+        max-width: 40rem;
+        text-wrap: pretty;
+    }
+}
+
+.about__link {
+    font-size: 1.8rem;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 2px solid black;
+    border-radius: 2rem;
+    color: black;
+    width: fit-content;
+    text-wrap: nowrap;
+
+    &:hover {
+        background-color: black;
+        color: white;
+    }
+
+    &:focus {
+        background-color: black;
+        color: white;
+    }
+}

@@ -1,0 +1,40 @@
+.project {
+    position: relative;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 0.1rem solid grey;
+
+    & a {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    & span {
+        flex: 1;
+        padding: 1rem 0.5rem;
+    }
+
+    &:hover .project__teaser,
+    &:focus-within .project__teaser {
+        opacity: 1;
+    }
+}
+
+.project:not(:first-of-type):hover,
+.project:not(:first-of-type):focus-within {
+    background-color: black;
+    color: white;
+}
+
+.project__teaser {
+    position: absolute;
+    z-index: 2;
+    height: 12rem;
+    aspect-ratio: 1/1;
+    opacity: 0;
+    transition: all 0.2s ease-out;
+}
