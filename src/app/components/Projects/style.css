@@ -28,6 +28,14 @@
 .project:not(:first-of-type):focus-within {
     background-color: black;
     color: white;
+
+    & span:last-of-type{
+        color: yellowgreen;
+    }
+}
+
+.project:first-of-type{
+    color: grey;
 }
 
 .project__teaser {

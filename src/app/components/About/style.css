@@ -29,12 +29,13 @@
     border: 2px solid black;
     border-radius: 2rem;
     color: black;
+    background-color: greenyellow;
     width: fit-content;
     text-wrap: nowrap;
 
     &:hover {
         background-color: black;
-        color: white;
+        color: white; 
     }
 
     &:focus {
